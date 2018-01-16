@@ -1,0 +1,374 @@
+html, body{
+	overflow: hidden;
+}
+*:focus{
+	outline: none; /*Removes bug in chrome that outlines all divs */
+}
+body{
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 2px;
+	font-size: large;
+}
+.container{
+	height: 100vh;
+}
+
+#mainmenu{ 	
+	height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;	
+}
+
+#mainmenu a{ 	
+	padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#mainmenu a:hover {
+    color: #f1f1f1;
+}
+
+#mainmenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#user{
+	display: none;
+}
+#about{
+	display: none;
+}
+
+#contact{
+	display: none;
+}
+
+#projects{
+	display: none;
+}
+
+#graphics{
+	display: none;
+}
+
+#sound{
+	display: none;
+}
+
+#qualifications{
+	display: none;
+}
+
+#industry{
+	display: none;
+}
+
+#photo{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	float: left;
+	overflow: hidden;
+	z-index: -1;
+}
+
+#photo img{
+	height:100%;
+	position:absolute;
+	left:0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+#img2{
+	transition: opacity 1s ease-in-out;
+	animation-name: cf3FadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-direction: alternate;
+}
+
+@keyframes cf3FadeInOut{
+	0% {
+		opacity: 1;
+	}
+	45% {
+		opacity: 1;
+	}
+	55% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#blank{
+	float: left;
+	width: 50%;
+	height: 100vh;
+}
+
+#details{
+	float: left;
+	left: 0;
+	width: 80%;
+	height: 100%;
+	overflow: visible;
+}
+
+#details p{
+	margin: 10px 0;
+	text-align: center;
+}
+
+#homeButton{
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	text-decoration: none;
+	background: rgba(96, 96, 96, 0.5);
+	float: left;
+	text-align: left;
+	border-radius: 5px;
+}
+#homeButton:hover{
+	color: black;
+	background: rgba(173, 216, 230, 0.6);
+}
+#homeButton p{
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+
+h1{
+	text-align: center;
+	font-size: 200%;
+   color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
+h2{
+	text-align: center;
+	font-size: 100%;
+}
+
+h3{
+	text-align: center;
+}
+
+#graphics.container#blank h1{
+	color: black;
+}
+
+.about{
+	margin-left: 50px;
+}
+
+.shaun{
+	border-radius: 50%;
+	width: 30%;
+	margin-left: 35%;
+}
+
+.app{
+	margin-left: 35%;
+}
+
+#menu1{
+	float: left;
+	width: 30%;
+	left: 50%;
+	height: 100vh;
+	font-size: medium;
+}
+
+#menu1 a{
+	color: white;
+}
+#menuItem1{
+	float: left;
+	left: 0;
+	width: 100%;
+	height: 25%;
+	border: 1px solid white;
+}
+
+#menuItem2{
+	float: left;
+	left: 0;
+	width: 100%;
+	height: 25%;
+	border: 1px solid white;
+	border-top: 0;
+}
+
+#menuItem3{
+	float: left;
+	left: 0;
+	width: 100%;
+	top: 50%;
+	height: 25%;
+	border: 1px solid white;
+	border-top: 0;
+}
+
+#menuItem4{
+	float: left;
+	left: 0;
+	width: 100%;
+	top: 50%;
+	height: 25%;
+	border: 1px solid white;
+	border-top: 0;	
+}
+
+.menuItem{
+	text-align: center;
+	background: rgba(96, 96, 96, 0.5);
+}
+
+.menuItem:hover{
+	color: black;
+	font-weight: bold;
+	font-size: large;
+	background: rgba(173, 216, 230, 0.6);
+}
+
+#menu2{
+	float: left;
+	width: 20%;
+	left: 80%;
+	height: 100%; 
+	text-align: center;
+	color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: black;
+}
+
+#menu2 a{
+	color: white;
+	text-decoration: none;
+}
+#menu2 p{
+	margin: 0;
+	padding: 10px;
+}
+
+#mainmenu2 {
+	height: 100%;
+}
+
+#mainmenu2:hover{
+	background: rgba(173, 216, 230, 0.6);
+}
+
+#video_background{
+	display: block;
+	margin: auto;
+}
+.course{
+	padding-top: 50px;
+	display: flex;
+    flex-wrap: wrap; /* optional. only if you want the items to wrap */
+    justify-content: center; /* for horizontal alignment */
+    align-items: center; /* for vertical alignment */
+}
+
+.uni{
+	max-width: 200px;
+	max-height: 100px;
+	float: right;
+}
+
+.coursename{
+	margin-left: 20px;
+	padding-left: 20px;
+	text-align: left;
+	
+}
+
+
+.mainMenuItem{
+	color: white;
+	background: rgba(96, 96, 96, 0.5);
+	height: 13%;
+	border: 1px solid white;
+	padding-top: 2px;
+	font-size: small;
+}
+
+.mainMenuItem:hover{
+	background: rgba(173, 216, 230, 0.6);
+}
+
+.screen{
+	display: inline-block;
+	margin: auto;
+	height:15%;
+	width:15%;
+}
+
+.screen1{
+	display: inline-block;
+	margin: auto;
+	height: 24%;
+	width: 24%;
+
+}
+
+.screen2{
+	display: inline-block;
+	margin: auto;
+	height: 30%;
+	width: 40%;
+
+}
+
+.user1{
+	width:30%;
+}
+
+.audio{
+	display: block;
+	margin: auto;
+}
+.icon{
+	max-width: 100px;
+	max-height: 150px;
+}
+
+.icongroup{
+	display: flex;
+    flex-wrap: wrap; /* optional. only if you want the items to wrap */
+    justify-content: center; /* for horizontal alignment */
+    align-items: center; /* for vertical alignment */
+}
+.imggroup{
+	display: flex;
+    flex-wrap: wrap; /* optional. only if you want the items to wrap */
+    justify-content: center; /* for horizontal alignment */
+    align-items: center; /* for vertical alignment */
+}

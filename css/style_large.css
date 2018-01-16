@@ -1,0 +1,93 @@
+@media screen and (min-width: 950px){
+	html, body{
+		overflow: hidden;
+	}
+	
+	#photo img {
+		width:100%;
+	}
+	
+	h1{
+		font-size: 500%;
+	}
+	h2{
+		font-size: 300%;
+	}
+	
+	#details{
+		width: 90%;
+	}
+	
+	#menu1{
+		width: 40%;
+		left: 50%;
+	}
+	
+	#menuItem1{
+		float: left;
+		left: 0;
+		width: 50%;
+		height: 50%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		border: 1px solid white;
+}
+
+	#menuItem2{
+		float: left;
+		left: 50%;
+		width: 50%;
+		height: 50%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		border: 1px solid white;
+		border-left: 0px;
+	}
+
+
+	#menuItem3{
+		float: left;
+		left: 0;
+		width: 50%;
+		top: 50%;
+		height: 50%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		border: 1px solid white;
+		border-top: 0px;
+	}
+
+	#menuItem4{
+		float: left;
+		left: 50%;
+		width: 50%;
+		top: 50%;
+		height: 50%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		border: 1px solid white;
+		border-top: 0px;
+		border-left: 0px;
+	}
+	
+	#menu2{
+		width: 10%;
+		left: 90%;
+	}
+	
+	#menu2 a{
+		color: grey;
+	}
+	
+	.menuItem:hover{
+		font-size: x-large;
+	}
+	#mainmenu a{
+		font-size: 20px;
+	}
+}
+
